@@ -13,6 +13,14 @@ console.log('2');
 console.log(_calc2.default.multiply(2, 4));
 console.log(_calc2.default.sum(2, 53, 6, 6));
 
+//Here is the arrow function!
+var test = function test(a, b) {
+  console.log(a);
+  console.log(b);
+};
+
+test('yay', 'arrows!');
+
 },{"./calc":2}],2:[function(require,module,exports){
 "use strict";
 
