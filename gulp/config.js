@@ -5,7 +5,7 @@ export default {
     index: 'client/app/index.html'
   },
   scripts: {
-    sourceFile: 'client/app/js/bundle.js',
+    sourceFile: 'client/app/js/main.js',
     prodFile: 'client/build/js/main.js'
   }
 };

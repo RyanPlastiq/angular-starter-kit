@@ -7,8 +7,9 @@ var _calc2 = _interopRequireDefault(_calc);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+console.log('1');
 console.log('helloo this is bundle.js');
-
+console.log('2');
 console.log(_calc2.default.multiply(2, 4));
 console.log(_calc2.default.sum(2, 53, 6, 6));
 
@@ -38,7 +39,24 @@ exports.default = {
   }
 };
 
-},{}]},{},[1])
+},{}],3:[function(require,module,exports){
+'use strict';
+
+var _bundle = require('./bundle');
+
+var _bundle2 = _interopRequireDefault(_bundle);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log('3');
+console.log('This is the main.js');
+console.log('4');
+
+setTimeout(function () {
+  document.getElementById('response').innerHTML = 'Hint: Check the console...';
+}, 3000);
+
+},{"./bundle":1}]},{},[3])
 
 
 //# sourceMappingURL=main.js.map
