@@ -1,4 +1,4 @@
-var obj = {
+export default {
   sum: function() {
     var total = 0;
     var nums = Array.prototype.slice.call(arguments);
@@ -18,4 +18,3 @@ var obj = {
   }
 };
 
-module.exports = obj;

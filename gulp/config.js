@@ -1,11 +1,11 @@
 export default {
   build: 'client/build',
-  source: 'client/source',
+  source: 'client/app',
   views: {
-    index: 'client/source/index.html'
+    index: 'client/app/index.html'
   },
   scripts: {
-    sourceFile: 'client/source/js/bundle.js',
+    sourceFile: 'client/app/js/bundle.js',
     prodFile: 'client/build/js/main.js'
   }
-}
+};

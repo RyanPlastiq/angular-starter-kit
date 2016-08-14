@@ -1,16 +1,24 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 'use strict';
 
-var calc = require('./calc');
-console.log('helloo this is main.js');
+var _calc = require('./calc');
 
-console.log(calc.multiply(2, 4));
-console.log(calc.sum(2, 53, 6, 6));
+var _calc2 = _interopRequireDefault(_calc);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log('helloo this is bundle.js');
+
+console.log(_calc2.default.multiply(2, 4));
+console.log(_calc2.default.sum(2, 53, 6, 6));
 
 },{"./calc":2}],2:[function(require,module,exports){
 "use strict";
 
-var obj = {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = {
   sum: function sum() {
     var total = 0;
     var nums = Array.prototype.slice.call(arguments);
@@ -29,8 +37,6 @@ var obj = {
     return num1 / num2;
   }
 };
-
-module.exports = obj;
 
 },{}]},{},[1])
 
