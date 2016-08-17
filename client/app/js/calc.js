@@ -18,3 +18,8 @@ export default {
   }
 };
 
+var hello = 1;
+
+var hello = (woo) => {
+  console.log(woo);
+};

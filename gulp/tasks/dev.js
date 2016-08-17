@@ -5,5 +5,5 @@ import gulp from 'gulp';
 import runSequence from 'run-sequence';
 
 gulp.task('dev', function(callback) {
-  runSequence('clean', ['sass', 'index', 'browserify'], callback);
+  runSequence('clean', ['sass', 'index', 'browserify'],'watch', callback);
 });

@@ -47,6 +47,13 @@ exports.default = {
   }
 };
 
+
+var hello = 1;
+
+var hello = function hello(woo) {
+  console.log(woo);
+};
+
 },{}],3:[function(require,module,exports){
 'use strict';
 
