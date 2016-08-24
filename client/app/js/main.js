@@ -1,9 +1,5 @@
-import bundle from './bundle';
-console.log('3');
-console.log('This is the main.js');
-console.log('4');
+import angular from 'angular';
 
+import layout from './layout/layout.module';
 
-setTimeout(function() {
-  document.getElementById('response').innerHTML = 'Hint: Check the console...';
-}, 3000);
+angular.module('cstaton', ['layout']);

@@ -1,20 +1,14 @@
 <!doctype html>
-<html>
+<html ng-app="cstaton">
   <head>
-    <title>Getting Cozy with Browserify</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <title>Angular Starter Kit V2</title>
     <link rel="stylesheet" href="./style/main.css">
   </head>
-  <body>
+  <body ng-controller="layoutController">
     <div class="container">
-      <h2>Welcome to the Client Side.</h2>
+      <h2>Welcome to the Angular Stater Kit V2.</h2>
 
-      <div class="well">
-        <p>I see you've got some numbers. Why not let me see them?</p>
-
-        <div id="response">
-        </div>
-      </div>
+      <p>{{testValue}}</p>
     </div>
     <script src="js/main.js"></script>
   </body>
