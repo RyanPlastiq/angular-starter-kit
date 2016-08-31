@@ -2,7 +2,9 @@ export default {
   build: 'client/build',
   source: 'client/app',
   views: {
-    index: 'client/app/index.html'
+    index: 'client/app/index.html',
+    templateGlob: 'client/app/js/**/*.html',
+    templateDest: 'client/app/js'
   },
   scripts: {
     sourceFile: 'client/app/js/main.js',

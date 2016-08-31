@@ -1,4 +1,6 @@
 import controller from './layout.controller';
+import route from './layout.route';
 
 export default angular.module('layout', [])
-  .controller('layoutController', controller);
+  .config(route)
+  .controller('LayoutController', controller);
