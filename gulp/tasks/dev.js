@@ -6,6 +6,6 @@ import runSequence from 'run-sequence';
 
 gulp.task('dev', function(callback) {
 
-  runSequence('clean', ['sass', 'views', 'browserify'], callback);
+  runSequence('clean', ['sass', 'views', 'browserify'], 'watch', callback);
   
 });

@@ -1,3 +1,6 @@
 {
-  "esversion": 6
+  "esversion": 6,
+  "devel": true,
+  "strict": false,
+  "node": true
 }
