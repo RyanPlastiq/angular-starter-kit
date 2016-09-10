@@ -15,34 +15,14 @@ import uglify from 'gulp-uglify';
 import streamify from 'gulp-streamify';
 import watchify from 'watchify';
 
-function build() {
-  const bundler = browserify(config.scripts.sourceFile, {
-    debug: true,
-    transform: [babelify]
-  });
-
-  return bundler.bundle()
-    .pipe(source(config.scripts.prodFile))
-    .pipe(buffer())
-    .pipe(sourcemaps.init({loadMaps: true}))
-    .on('error', gutil.log)
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('./'));
-}
-
-// gulp.task('browserify', build);
-
-
-
-//////////////////////////////////////////////////////
-
 
 
 function createSourcemap() {
   return !config.isProd || config.browserify.prodSourcemap;
 }
 
-// Based on: http://blog.avisi.nl/2014/04/25/how-to-keep-a-fast-build-with-browserify-and-reactjs/
+//Be careful if editing the buildScript
+
 function buildScript() {
   let bundler = browserify({
     entries: config.scripts.sourceFile,
@@ -63,7 +43,6 @@ function buildScript() {
 
   const transforms = [
     { 'name':babelify, 'options': {}},
-    // { 'name':debowerify, 'options': {}},
     { 'name':ngAnnotate, 'options': {}},
     // { 'name':'brfs', 'options': {}},
     // { 'name':'bulkify', 'options': {}}
