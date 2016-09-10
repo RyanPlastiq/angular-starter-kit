@@ -1,7 +1,10 @@
 <div class='main-layout-container'>
-  <p>This is the main layout</p>
-  <h2>Welcome to the Angular Stater Kit V2.</h2>
-  <p>{{testValue}} updated the view</p>
-  <p>{{layoutCtrl.tester}}</p>
+  <div class='nav-bar-container'>
+    <div
+      ng-repeat="item in layoutCtrl.navItems" 
+      class="nav-item">
+      <p class="nav-text" ui-sref="{{item.ref}}">{{item.name}}</p>
+    </div>
+  </div>
   <div ui-view></div>
 </div>

@@ -3,13 +3,15 @@ import onConfig from './onConfig';
 import onRun from './onRun';
 
 import 'angular-ui-router';
-import './layout/layout.module';
 import './templates';
+import './layout/layout.module';
+import './components/component.module';
 
 angular.module('cstaton', [
   'templates',
   'ui.router',
-  'layout'
+  'layout',
+  'component'
 ])
 .config(onConfig)
 .run(onRun);
