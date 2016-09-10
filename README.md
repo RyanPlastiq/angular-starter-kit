@@ -1,5 +1,5 @@
-# Browserify and Babel Tutorial
-### This is a simple repo to get going with a nice build system utilizing Browserify and Babel
+# Angular Starter Kit
+### This is a simple repo to get going with a nice Angular build system utilizing Browserify and Babel
 ### Enables you to write in ES6 syntax!
 
 1. To get Started fork and clone the repo to your local environment.
@@ -8,6 +8,8 @@
   * This is the main command to run in order to build the folder
 4. Inside the build folder run the command 'open index.html'
   * This will open the file with your default browser
+  * You can optionally use a server if you like
+    -> check out my other repos!!
 
 #### High Level Explanation of whats going on here
 
