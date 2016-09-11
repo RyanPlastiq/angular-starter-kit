@@ -19,8 +19,9 @@ function AnimationsRoutes($stateProvider, $urlRouterProvider) {
     // })
     .state('App.Animations', {
       title: "Animations",
-      // controller: 'HomeController as HomeCtrl',
-      template: '<div><p>Animations view!!</p></div>',
+      controller: 'AnimationsController as animationCtrl',
+      // template: '<div><p>Animations view!!</p></div>',
+      templateUrl: 'views/animations/animations.html',
       url: '/animations'
     });
 

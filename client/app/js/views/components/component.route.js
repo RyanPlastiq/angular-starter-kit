@@ -18,10 +18,11 @@ function ComponentRoutes($stateProvider, $urlRouterProvider) {
     //   }
     // })
     .state('App.Component', {
-      title: "Home",
-      // controller: 'HomeController as HomeCtrl',
-      template: '<div><p>Component view!!</p></div>',
-      url: '/home'
+      title: "Component",
+      controller: 'ComponentController as componentCtrl',
+      templateUrl: 'views/components/component.html',
+      // template: '<div><p>Component view!!</p></div>',
+      url: '/component'
     });
 
 }

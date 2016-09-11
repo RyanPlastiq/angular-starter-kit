@@ -1,4 +1,4 @@
 angular.module('templates', []).run(['$templateCache', function($templateCache) {$templateCache.put('layout/layout.html','<div class=\'main-layout-container\'>\n  <div class=\'nav-bar-container\'>\n    <div\n      ng-repeat="item in layoutCtrl.navItems" \n      ui-sref="{{item.ref}}"\n      class="nav-item">\n      <p class="nav-text">{{item.name}}</p>\n    </div>\n  </div>\n  <div ui-view></div>\n</div>');
-$templateCache.put('views/animations/animations.html','<div class=\'animations-container\'>\n\n</div>');
-$templateCache.put('views/components/component.html','<div class=\'component-container\'>\n\n</div>');
+$templateCache.put('views/animations/animations.html','<div class=\'animations-container\'>\n  <p>hello world</p>\n  <p>{{animationCtrl.test}}</p>\n</div>');
+$templateCache.put('views/components/component.html','<div class=\'component-container\'>\n  <p>{{componentCtrl.test}}</p>\n</div>');
 $templateCache.put('views/tests/tests.html','<div class=\'tests-container\'>\n\n</div>');}]);
