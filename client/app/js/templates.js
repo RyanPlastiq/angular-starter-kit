@@ -1,2 +1,4 @@
-angular.module('templates', []).run(['$templateCache', function($templateCache) {$templateCache.put('components/component.html','<div class=\'component-container\'>\n\n</div>');
-$templateCache.put('layout/layout.html','<div class=\'main-layout-container\'>\n  <div class=\'nav-bar-container\'>\n    <div\n      ng-repeat="item in layoutCtrl.navItems" \n      class="nav-item">\n      <p class="nav-text" ui-sref="{{item.ref}}">{{item.name}}</p>\n    </div>\n  </div>\n  <div ui-view></div>\n</div>');}]);
+angular.module('templates', []).run(['$templateCache', function($templateCache) {$templateCache.put('layout/layout.html','<div class=\'main-layout-container\'>\n  <div class=\'nav-bar-container\'>\n    <div\n      ng-repeat="item in layoutCtrl.navItems" \n      ui-sref="{{item.ref}}"\n      class="nav-item">\n      <p class="nav-text">{{item.name}}</p>\n    </div>\n  </div>\n  <div ui-view></div>\n</div>');
+$templateCache.put('views/animations/animations.html','<div class=\'animations-container\'>\n\n</div>');
+$templateCache.put('views/components/component.html','<div class=\'component-container\'>\n\n</div>');
+$templateCache.put('views/tests/tests.html','<div class=\'tests-container\'>\n\n</div>');}]);

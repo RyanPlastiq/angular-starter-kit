@@ -10,8 +10,8 @@ function LayoutController($scope) {
   vm.navItems = [
     {name: 'Home', ref: 'App.Home'}, 
     {name: 'Components', ref: 'App.Component'},
-    {name: 'Tests', ref: ''},
-    {name: 'Animations', ref:''}
+    {name: 'Tests', ref: 'App.Tests'},
+    {name: 'Animations', ref:'App.Animations'}
   ];
 }
 

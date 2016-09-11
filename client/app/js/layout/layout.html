@@ -2,8 +2,9 @@
   <div class='nav-bar-container'>
     <div
       ng-repeat="item in layoutCtrl.navItems" 
+      ui-sref="{{item.ref}}"
       class="nav-item">
-      <p class="nav-text" ui-sref="{{item.ref}}">{{item.name}}</p>
+      <p class="nav-text">{{item.name}}</p>
     </div>
   </div>
   <div ui-view></div>

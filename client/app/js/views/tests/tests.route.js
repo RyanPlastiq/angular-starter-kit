@@ -1,6 +1,6 @@
 'use strict';
 
-function LayoutRoutes($stateProvider, $urlRouterProvider) {
+function TestsRoutes($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.otherwise('/home');
 
@@ -17,13 +17,13 @@ function LayoutRoutes($stateProvider, $urlRouterProvider) {
     //     }
     //   }
     // })
-    .state('App.Component', {
-      title: "Home",
+    .state('App.Tests', {
+      title: "Tests",
       // controller: 'HomeController as HomeCtrl',
-      template: '<div><p>Component view!!</p></div>',
-      url: '/home'
+      template: '<div><p>Tests view!!</p></div>',
+      url: '/tests'
     });
 
 }
 
-export default LayoutRoutes;
+export default TestsRoutes;
