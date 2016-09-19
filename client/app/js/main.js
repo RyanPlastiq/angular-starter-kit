@@ -8,6 +8,7 @@ import './layout/layout.module';
 import './views/components/component.module';
 import './views/tests/tests.module';
 import './views/animations/animations.module';
+import './directives/textInput/textInput.module.js';
 
 angular.module('cstaton', [
   'templates',
@@ -15,7 +16,8 @@ angular.module('cstaton', [
   'layout',
   'component',
   'tests',
-  'animations'
+  'animations',
+  'textInput'
 ])
 .config(onConfig)
 .run(onRun);
